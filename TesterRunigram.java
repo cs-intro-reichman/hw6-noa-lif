@@ -9,6 +9,7 @@ public class TesterRunigram {
 
     public static void main(String[] args) {
         String testName = args[0];
+        // String testName = "blend";
 
         if (testName.equals("read")) {
             // Testing Runigram.read
@@ -71,10 +72,10 @@ public class TesterRunigram {
         }
 
 
-        // Color[][] img = Runigram.scaled(safeRead("eyes.ppm"), 241, 209);
+        Color[][] img = Runigram.scaled(safeRead("eyes.ppm"), 241, 209);
         // Color[][] img = Runigram.blend(safeRead("escher.ppm"), safeRead("eyes.ppm"), 0.21);
-        // int a = 2;
-        // savePPM("blend_021.ppm", img);
+        int a = 2;
+        savePPM("blend_021.ppm", img);
         
     }
 
